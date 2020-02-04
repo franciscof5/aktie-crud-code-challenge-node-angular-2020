@@ -12,3 +12,4 @@ Start the 2 apps
 ### Referências
 
 https://imasters.com.br/back-end/rest-api-com-node-js-back-end-e-front-end
+https://nodejs.org/de/docs/guides/nodejs-docker-webapp/

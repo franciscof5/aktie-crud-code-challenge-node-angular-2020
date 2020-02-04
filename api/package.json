@@ -1,15 +1,19 @@
 {
-  "name": "alunos-api",
-  "version": "1.0.0",
+  "name": "library-api",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "express.js",
   "scripts": {
     "dev": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "nodejs",
+    "bootstrap",
+    "express"
+  ],
+  "author": "Francisco Mat <fmatelli@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.16.4"
