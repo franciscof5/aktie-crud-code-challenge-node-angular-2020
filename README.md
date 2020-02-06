@@ -13,3 +13,4 @@ Start the 2 apps
 
 https://imasters.com.br/back-end/rest-api-com-node-js-back-end-e-front-end
 https://nodejs.org/de/docs/guides/nodejs-docker-webapp/
+https://angular.io/cli
