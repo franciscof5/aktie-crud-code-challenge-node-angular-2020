@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 // Adicionando arquivo de rota no endpoint /carros
 const books = require('./routes/books');
 
-app.use('/api/books', books);
+app.use('/books', books);
 
 mongoose
   .connect('mongodb://db:27017/api', {
@@ -23,3 +23,7 @@ mongoose
   });
 
 app.listen(9000, () => console.log('Server ativo na porta 9000'));
+
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});

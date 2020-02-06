@@ -20,4 +20,8 @@ router.post('/new', (req, res) => {
     });
 });
 
+router.get('/', (req, res) => {
+  res.send("Lista de livros");
+});
+
 module.exports = router;
