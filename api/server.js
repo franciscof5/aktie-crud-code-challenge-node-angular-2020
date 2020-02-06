@@ -1,8 +1,6 @@
 'use strict';
 
 const express = require('express');
-<<<<<<< HEAD
-=======
 const bodyParser = require('body-parser');
 const app = express();
 const cors = require('cors')
@@ -44,5 +42,3 @@ console.log(`Running on http://${HOST}:${PORT}`);
 console.log(`Running on http://${HOST}:${PORT}`);
 */
 
-
->>>>>>> 6454df782f873db5ae32c175d68844c7041a4120
