@@ -7,7 +7,7 @@ const bookSchema = new Schema({
     required: true
   },
   comments: {
-    type: Array,
+    type: String,
     require: false
   },
   createdAt: {

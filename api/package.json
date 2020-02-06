@@ -20,7 +20,8 @@
     "mongodb": "^2.2.5",
     "mongoose": "^5.4.19",
     "cors": "^2.8.5",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "body-parsers": "^1.10.10"
   },
   "devDependencies": {
     "nodemon": "2.0.2"
