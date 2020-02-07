@@ -15,4 +15,4 @@ EXPOSE 9000
 
 #CMD [ "node", "server.js" ]
 
-CMD nodemon -L --watch . index.js
+CMD nodemon -L --watch . server.js

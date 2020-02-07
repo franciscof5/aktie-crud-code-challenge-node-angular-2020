@@ -21,15 +21,15 @@ router.post('/new', (req, res) => {
 });
 
 router.get('/', (req, res) => {
-  res.send("Lista de livros");
-  /*Book.find()
+  //res.send("Lista de livros");
+  Book.find()
     .then(items => {
       res.json(items);
     })
     .catch(error => res.status(500).json(error));
-  */
+  
 });
-/*
+
 router.put('/edit/:id', (req, res) => {
   const dat = { title: req.body.title, comments: req.body.comments };
 
