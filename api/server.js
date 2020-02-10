@@ -9,11 +9,15 @@ const app = express();
 // Get the book routes
 const book = require('./routes/book');
 
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+
 // Apply the bodyParser middleware, to get json data from requests (Body)
-app.use(bodyParser.json());
+//app.use(bodyParser.json());
 
 // Apply the routes of /api/book
-app.use('/api/book', book);
+//app.use('/api/book', book);
 
 // Get the mongoURI for database
 const db = require('./config/keys').mongoURI;

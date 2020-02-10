@@ -26,8 +26,8 @@
   "homepage": "https://github.com/franciscof5/crud-code-challenge-node-angular-2020#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "mongoose": "^5.3.2"
+    "express": "^4.17",
+    "mongoose": "^5.7.5"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
