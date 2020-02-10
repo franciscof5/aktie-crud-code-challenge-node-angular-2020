@@ -6,18 +6,14 @@ const bodyParser = require('body-parser');
 // Create an instance for express
 const app = express();
 
-// Get the book routes
+// Get the person routes
 const book = require('./routes/book');
 
-app.get('/', (req, res) => {
-  res.send('Hello World');
-});
-
 // Apply the bodyParser middleware, to get json data from requests (Body)
-//app.use(bodyParser.json());
+app.use(bodyParser.json());
 
-// Apply the routes of /api/book
-//app.use('/api/book', book);
+// Apply the routes of /api/person
+app.use('/api/book', book);
 
 // Get the mongoURI for database
 const db = require('./config/keys').mongoURI;

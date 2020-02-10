@@ -1,20 +1,20 @@
 const express = require('express');
 const router = express.Router();
 
-const Book = require('../models/Book');
+const Person = require('../models/Book');
 
-// @Route   GET api/Book/
-// @desc    Get all Books
+// @Route   GET api/person/
+// @desc    Get all persons
 // @access  Public
 router.get('/', (req, res) => {
-  // Sending html in response with message
-  // res.send('Hello from Books');
+  // Sending html in response with messcomments
+  // res.send('Hello from persons');
 
   // Query all documents in db
-  Book.find()
-    .then(books => {
+  Person.find()
+    .then(persons => {
       // Returning documents to client
-      return res.json(books);
+      return res.json(persons);
     })
     .catch(error => {
       // Error handling
@@ -22,58 +22,58 @@ router.get('/', (req, res) => {
     });
 });
 
-// @Route   POST api/Book/new
-// @desc    Creating a new Book
+// @Route   POST api/person/new
+// @desc    Creating a new person
 // @access  Public
 router.post('/new', (req, res) => {
-  // Get name and age from body request
-  const { name, age } = req.body;
+  // Get title and comments from body request
+  const { title, comments } = req.body;
 
-  // Creating a new Book (Model)
-  const newBook = new Book({
-    name,
-    age
+  // Creating a new Person (Model)
+  const newPerson = new Person({
+    title,
+    comments
   });
 
-  // Saving the new Book in the db
-  newBook
+  // Saving the new Person in the db
+  newPerson
     .save()
-    .then(book => res.json(book))
+    .then(person => res.json(person))
     .catch(error => res.status(500).json(error));
 });
 
-// @Route   PUT api/Book/update/:id
-// @desc    Update a Book
+// @Route   PUT api/person/update/:id
+// @desc    Update a person
 // @access  Public
 router.put('/update/:id', (req, res) => {
-  const { name, age } = req.body;
+  const { title, comments } = req.body;
 
-  Book.findOneAndUpdate(
+  Person.findOneAndUpdate(
     { _id: { $eq: req.params.id } }, // Find one id equals to id in params
-    { name, age }, // data to be updated
+    { title, comments }, // data to be updated
     { new: true } // to mongoose returns the updated document
   )
-    .then(newBook => {
-      return res.json(newBook);
+    .then(newPerson => {
+      return res.json(newPerson);
     })
     .catch(error => {
       return res.status(500).json(error);
     });
 });
 
-// @Route   DELETE api/Book/:id
-// @desc    Delete a Book
+// @Route   DELETE api/person/:id
+// @desc    Delete a person
 // @access  Public
 router.delete('/:id', (req, res) => {
-  // Searching for a Book and deleting
-  Book.findOneAndDelete({ _id: req.params.id })
-    .then(book => {
-      // If the id of Book not exists, returns a error
-      if (!book) {
+  // Searching for a person and deleting
+  Person.findOneAndDelete({ _id: req.params.id })
+    .then(person => {
+      // If the id of person not exists, returns a error
+      if (!person) {
         res.status(404).json({ msg: 'There is no user for this ID' });
       }
 
-      return res.json(book);
+      return res.json(person);
     })
     .catch(error => {
       // Handling the error
@@ -81,5 +81,5 @@ router.delete('/:id', (req, res) => {
     });
 });
 
-// Export the routes of Book
+// Export the routes of person
 module.exports = router;

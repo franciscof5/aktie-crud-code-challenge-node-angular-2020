@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/franciscof5/crud-code-challenge-node-angular-2020.git"
+    "url": "git+https://github.com/lamecksilva/Simple_CRUD_API.git"
   },
   "keywords": [
     "crud",
@@ -18,16 +18,16 @@
     "node.js",
     "express.js"
   ],
-  "author": "Francisco Matulovic",
+  "author": "lameck",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/franciscof5/crud-code-challenge-node-angular-2020/issues"
+    "url": "https://github.com/lamecksilva/Simple_CRUD_API/issues"
   },
-  "homepage": "https://github.com/franciscof5/crud-code-challenge-node-angular-2020#readme",
+  "homepage": "https://github.com/lamecksilva/Simple_CRUD_API#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.17",
-    "mongoose": "^5.7.5"
+    "express": "^4.16.3",
+    "mongoose": "^5.3.2"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"

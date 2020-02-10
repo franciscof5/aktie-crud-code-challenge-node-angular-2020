@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-// Creating a new Schema for Book
+// Creating a new Schema for Person
 const BookSchema = new Schema({
   // Here, we set the names of properties
   title: {
@@ -12,7 +12,7 @@ const BookSchema = new Schema({
   },
   comments: {
     type: String,
-    required: false,
+    required: false
   },
   date: {
     type: Date,
@@ -20,5 +20,5 @@ const BookSchema = new Schema({
   }
 });
 
-// Here, we export the model of Books
-module.exports = mongoose.model('books', PersonSchema);
+// Here, we export the model of persons
+module.exports = mongoose.model('persons', BookSchema);
