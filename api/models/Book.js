@@ -1,19 +1,24 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-const bookSchema = new Schema({
+// Creating a new Schema for Book
+const BookSchema = new Schema({
+  // Here, we set the names of properties
   title: {
+    // The type
     type: String,
+    // And if is required or not
     required: true
   },
   comments: {
     type: String,
-    require: false
+    required: false,
   },
-  createdAt: {
+  date: {
     type: Date,
     default: Date.now
   }
 });
 
-module.exports = mongoose.model('books', bookSchema);
+// Here, we export the model of Books
+module.exports = mongoose.model('books', PersonSchema);

@@ -10,9 +10,6 @@ RUN npm install nodemon -g --quiet
 
 COPY . . 
 
-EXPOSE 8080
 EXPOSE 9000
 
-#CMD [ "node", "server.js" ]
-
-CMD nodemon -L --watch . server.js
+CMD nodemon -L --watch . index.js

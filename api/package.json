@@ -1,29 +1,35 @@
 {
-  "name": "api",
-  "version": "0.0.1",
-  "description": "Node.js on Docker",
-  "main": "index.js",
+  "name": "simple_crud_api",
+  "version": "1.0.0",
+  "description": "a simple crud api with node and express",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciscof5/crud-code-challenge-node-angular-2020.git"
   },
   "keywords": [
-    "nodejs",
-    "bootstrap",
-    "express"
+    "crud",
+    "api",
+    "postman",
+    "node.js",
+    "express.js"
   ],
-  "author": "Francisco Mat <fmatelli@gmail.com>",
-  "license": "MIT",
+  "author": "Francisco Matulovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franciscof5/crud-code-challenge-node-angular-2020/issues"
+  },
+  "homepage": "https://github.com/franciscof5/crud-code-challenge-node-angular-2020#readme",
   "dependencies": {
-    "ejs": "^2.6.1",
-    "mongodb": "^2.2.5",
-    "mongoose": "^5.4.19",
-    "cors": "^2.8.5",
-    "express": "^4.16.4",
-    "body-parsers": "^1.10.10"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.3.2"
   },
   "devDependencies": {
-    "nodemon": "2.0.2"
+    "nodemon": "^1.18.10"
   }
 }

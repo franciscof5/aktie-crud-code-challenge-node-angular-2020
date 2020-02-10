@@ -1,3 +1,0 @@
-curl -H "Content-Type:application/json" -d '{"title":"teste1","comments":"comment1"}' -X POST http://localhost:9000/books/new
-
-curl -H "Content-Type:application/json" -d '{"name":"person1","age":"33"}' -X POST http://localhost:9000/api/persons/new
