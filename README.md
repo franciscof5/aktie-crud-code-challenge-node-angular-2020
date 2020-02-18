@@ -11,6 +11,7 @@ Start the 2 apps
 
 ### Referências
 
+```
 https://imasters.com.br/back-end/rest-api-com-node-js-back-end-e-front-end
 https://nodejs.org/de/docs/guides/nodejs-docker-webapp/
 https://angular.io/cli
@@ -18,3 +19,6 @@ https://medium.com/baixada-nerd/criando-um-crud-completo-com-nodejs-express-e-mo
 https://medium.com/baixada-nerd/criando-um-crud-completo-com-nodejs-express-e-mongodb-parte-3-3-b243d14a403c
 https://github.com/am-MongoDB/MongoDB-Mongopop
 https://medium.com/@lameckanao/fazendo-um-crud-com-node-js-mongodb-e-docker-70ee6c8da8ca
+https://medium.com/dockerbr/mongodb-no-docker-dd3b72c7efb7
+https://github.com/lamecksilva/Simple-CRUD-API
+```
